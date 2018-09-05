@@ -1,0 +1,9 @@
+<h1>subjectsss</h1>
+ 
+<div *ngFor="let subject of subjects | async" style="width: 300px;">
+  <subject-details [subject]='subject'></subject-details>
+</div>
+ 
+<div>
+  <button type="button" class="button btn-danger" (click)='deleteSubjects()'>Delete All</button>
+</div>
